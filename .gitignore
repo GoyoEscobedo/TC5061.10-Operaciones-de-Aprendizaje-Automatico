@@ -1,0 +1,14 @@
+# Entornos y archivos temporales
+.venv/
+.venv3.13/
+__pycache__/
+*.py[cod]
+.DS_Store
+.mplconfig/
+~$*
+
+# MLflow y resultados generados al ejecutar los scripts
+actividad_mlflow/mlflow.db*
+actividad_mlflow/mlartifacts/
+actividad_mlflow/mlruns/
+actividad_mlflow/outputs/

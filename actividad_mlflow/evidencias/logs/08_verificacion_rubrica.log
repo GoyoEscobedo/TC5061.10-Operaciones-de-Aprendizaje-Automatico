@@ -1,0 +1,36 @@
+/Users/gescobed_mac/Documents/Operaciones de aprendizaje automático/.venv3.13/lib/python3.13/site-packages/mlflow/types/utils.py:440: UserWarning: Hint: Inferred schema contains integer column(s). Integer columns in Python cannot represent missing values. If your input data contains missing values at inference time, it will be encoded as floats and will cause a schema enforcement error. The best way to avoid this problem is to infer the model schema based on a realistic data sample (training dataset) that includes missing values. Alternatively, you can declare integer columns as doubles (float64) whenever these columns may have missing values. See `Handling Integers With Missing Values <https://www.mlflow.org/docs/latest/models.html#handling-integers-with-missing-values>`_ for more details.
+  warnings.warn(
+2026/10/11 22:27:44 WARNING mlflow.sklearn: Saving scikit-learn models in the pickle or cloudpickle format requires exercising caution because these formats rely on Python's object serialization mechanism, which can execute arbitrary code during deserialization. The recommended safe alternative is the 'skops' format. For more information, see: https://scikit-learn.org/stable/model_persistence.html
+{
+  "run_id": "22dca22b9dbd4158972c5dedfb766521",
+  "experiment_id": "1",
+  "run_name": "08_verificacion_rubrica",
+  "model_uri": "models:/m-6c06c2bbf774455783b437d4253e5723",
+  "params": {
+    "C": 1.0,
+    "penalty": "l1",
+    "class_weight": "none",
+    "max_iter": 1000,
+    "seed": 42,
+    "validation_seed": 43,
+    "solver": "liblinear",
+    "test_size": 0.2,
+    "validation_size_training": 0.25,
+    "threshold": 0.5,
+    "top_fraction": 0.1,
+    "excluded_columns": "contact,day,month,duration,campaign,poutcome",
+    "dataset_sha256": "d1513ec63b385506f7cfce9f2c5caa9fe99e7ba4e8c3fa264b3aaf0f849ed32d",
+    "train_py_sha256": "aa2c13a0a360f8f95fa5ce7490ba6470b7e7b392638c4e6aabe7c0d1e2a4c2b1",
+    "selection_metric": "validation_AP",
+    "evaluate_test": true
+  },
+  "metrics": {
+    "test_accuracy": 0.8820081831250691,
+    "test_precision_yes": 0.30434782608695654,
+    "test_recall_yes": 0.006616257088846881,
+    "test_f1_yes": 0.012950971322849213,
+    "test_AP": 0.2550566033827188,
+    "test_tasa_top10": 0.32964601769911506,
+    "test_lift_top10": 2.817569884738277
+  }
+}

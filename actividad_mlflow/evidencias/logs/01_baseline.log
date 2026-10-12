@@ -1,0 +1,40 @@
+{
+  "run_id": "ee8c76c927744857908ef135b6ac933c",
+  "experiment_id": "1",
+  "run_name": "01_baseline",
+  "model_uri": "models:/m-e00714ab855d40a4bb89c8fd8aacb33a",
+  "params": {
+    "C": 1.0,
+    "penalty": "l2",
+    "class_weight": "none",
+    "max_iter": 1000,
+    "seed": 42,
+    "validation_seed": 43,
+    "solver": "liblinear",
+    "test_size": 0.2,
+    "validation_size_training": 0.25,
+    "threshold": 0.5,
+    "top_fraction": 0.1,
+    "excluded_columns": "contact,day,month,duration,campaign,poutcome",
+    "dataset_sha256": "d1513ec63b385506f7cfce9f2c5caa9fe99e7ba4e8c3fa264b3aaf0f849ed32d",
+    "train_py_sha256": "4ced3110f9fa74b0d79f326036132225806cb566a74d92d4649ba513bd37fad2",
+    "selection_metric": "validation_AP",
+    "evaluate_test": false
+  },
+  "metrics": {
+    "validation_accuracy": 0.882879893828799,
+    "validation_precision_yes": 0.47619047619047616,
+    "validation_recall_yes": 0.00945179584120983,
+    "validation_f1_yes": 0.018535681186283594,
+    "validation_AP": 0.26648475591880183,
+    "validation_tasa_top10": 0.3407079646017699,
+    "validation_lift_top10": 2.9117971795172055
+  }
+}
+
+Matplotlib is building the font cache; this may take a moment.
+2026/10/11 21:51:05 INFO mlflow.store.db.utils: Creating initial MLflow database tables...
+2026/10/11 21:51:05 INFO mlflow.store.db.utils: Updating database tables
+/Users/gescobed_mac/Documents/Operaciones de aprendizaje automático/.venv3.13/lib/python3.13/site-packages/mlflow/types/utils.py:440: UserWarning: Hint: Inferred schema contains integer column(s). Integer columns in Python cannot represent missing values. If your input data contains missing values at inference time, it will be encoded as floats and will cause a schema enforcement error. The best way to avoid this problem is to infer the model schema based on a realistic data sample (training dataset) that includes missing values. Alternatively, you can declare integer columns as doubles (float64) whenever these columns may have missing values. See `Handling Integers With Missing Values <https://www.mlflow.org/docs/latest/models.html#handling-integers-with-missing-values>`_ for more details.
+  warnings.warn(
+2026/10/11 21:51:06 WARNING mlflow.sklearn: Saving scikit-learn models in the pickle or cloudpickle format requires exercising caution because these formats rely on Python's object serialization mechanism, which can execute arbitrary code during deserialization. The recommended safe alternative is the 'skops' format. For more information, see: https://scikit-learn.org/stable/model_persistence.html

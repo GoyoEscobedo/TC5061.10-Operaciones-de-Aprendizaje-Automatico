@@ -1,0 +1,268 @@
+{
+  "comparison_runs": [
+    {
+      "run_id": "ee8c76c927744857908ef135b6ac933c",
+      "experiment_id": "1",
+      "run_name": "01_baseline",
+      "model_uri": "models:/m-e00714ab855d40a4bb89c8fd8aacb33a",
+      "params": {
+        "C": 1.0,
+        "penalty": "l2",
+        "class_weight": "none",
+        "max_iter": 1000,
+        "seed": 42,
+        "validation_seed": 43,
+        "solver": "liblinear",
+        "test_size": 0.2,
+        "validation_size_training": 0.25,
+        "threshold": 0.5,
+        "top_fraction": 0.1,
+        "excluded_columns": "contact,day,month,duration,campaign,poutcome",
+        "dataset_sha256": "d1513ec63b385506f7cfce9f2c5caa9fe99e7ba4e8c3fa264b3aaf0f849ed32d",
+        "train_py_sha256": "4ced3110f9fa74b0d79f326036132225806cb566a74d92d4649ba513bd37fad2",
+        "selection_metric": "validation_AP",
+        "evaluate_test": false
+      },
+      "metrics": {
+        "validation_accuracy": 0.882879893828799,
+        "validation_precision_yes": 0.47619047619047616,
+        "validation_recall_yes": 0.00945179584120983,
+        "validation_f1_yes": 0.018535681186283594,
+        "validation_AP": 0.26648475591880183,
+        "validation_tasa_top10": 0.3407079646017699,
+        "validation_lift_top10": 2.9117971795172055
+      }
+    },
+    {
+      "run_id": "5af49be765bd4f918ac71749a2dfd303",
+      "experiment_id": "1",
+      "run_name": "02_C_001",
+      "model_uri": "models:/m-4df8b1c940ae4fa5bbe6cc333abbc1b3",
+      "params": {
+        "C": 0.01,
+        "penalty": "l2",
+        "class_weight": "none",
+        "max_iter": 1000,
+        "seed": 42,
+        "validation_seed": 43,
+        "solver": "liblinear",
+        "test_size": 0.2,
+        "validation_size_training": 0.25,
+        "threshold": 0.5,
+        "top_fraction": 0.1,
+        "excluded_columns": "contact,day,month,duration,campaign,poutcome",
+        "dataset_sha256": "d1513ec63b385506f7cfce9f2c5caa9fe99e7ba4e8c3fa264b3aaf0f849ed32d",
+        "train_py_sha256": "4ced3110f9fa74b0d79f326036132225806cb566a74d92d4649ba513bd37fad2",
+        "selection_metric": "validation_AP",
+        "evaluate_test": false
+      },
+      "metrics": {
+        "validation_accuracy": 0.8821057288210573,
+        "validation_precision_yes": 0.21428571428571427,
+        "validation_recall_yes": 0.002835538752362949,
+        "validation_f1_yes": 0.005597014925373134,
+        "validation_AP": 0.26359396804319746,
+        "validation_tasa_top10": 0.34292035398230086,
+        "validation_lift_top10": 2.9307049534101743
+      }
+    },
+    {
+      "run_id": "e751880ee3ef431b99b71fdb48ccc8b3",
+      "experiment_id": "1",
+      "run_name": "03_C_100",
+      "model_uri": "models:/m-4b7405cffbd54aae92fd229ffddf6546",
+      "params": {
+        "C": 100.0,
+        "penalty": "l2",
+        "class_weight": "none",
+        "max_iter": 1000,
+        "seed": 42,
+        "validation_seed": 43,
+        "solver": "liblinear",
+        "test_size": 0.2,
+        "validation_size_training": 0.25,
+        "threshold": 0.5,
+        "top_fraction": 0.1,
+        "excluded_columns": "contact,day,month,duration,campaign,poutcome",
+        "dataset_sha256": "d1513ec63b385506f7cfce9f2c5caa9fe99e7ba4e8c3fa264b3aaf0f849ed32d",
+        "train_py_sha256": "4ced3110f9fa74b0d79f326036132225806cb566a74d92d4649ba513bd37fad2",
+        "selection_metric": "validation_AP",
+        "evaluate_test": false
+      },
+      "metrics": {
+        "validation_accuracy": 0.8829904888299049,
+        "validation_precision_yes": 0.5,
+        "validation_recall_yes": 0.010396975425330813,
+        "validation_f1_yes": 0.020370370370370372,
+        "validation_AP": 0.2664334615318833,
+        "validation_tasa_top10": 0.3396017699115044,
+        "validation_lift_top10": 2.902343292570721
+      }
+    },
+    {
+      "run_id": "199023f2ab7d41298d87d60e86b22ee2",
+      "experiment_id": "1",
+      "run_name": "04_regularizacion_l1",
+      "model_uri": "models:/m-2a90defd3d314656b6c31961ec737bf9",
+      "params": {
+        "C": 1.0,
+        "penalty": "l1",
+        "class_weight": "none",
+        "max_iter": 1000,
+        "seed": 42,
+        "validation_seed": 43,
+        "solver": "liblinear",
+        "test_size": 0.2,
+        "validation_size_training": 0.25,
+        "threshold": 0.5,
+        "top_fraction": 0.1,
+        "excluded_columns": "contact,day,month,duration,campaign,poutcome",
+        "dataset_sha256": "d1513ec63b385506f7cfce9f2c5caa9fe99e7ba4e8c3fa264b3aaf0f849ed32d",
+        "train_py_sha256": "4ced3110f9fa74b0d79f326036132225806cb566a74d92d4649ba513bd37fad2",
+        "selection_metric": "validation_AP",
+        "evaluate_test": false
+      },
+      "metrics": {
+        "validation_accuracy": 0.882879893828799,
+        "validation_precision_yes": 0.47619047619047616,
+        "validation_recall_yes": 0.00945179584120983,
+        "validation_f1_yes": 0.018535681186283594,
+        "validation_AP": 0.26654103646194194,
+        "validation_tasa_top10": 0.3418141592920354,
+        "validation_lift_top10": 2.92125106646369
+      }
+    },
+    {
+      "run_id": "05a793920c954506b90c22756e85d4e9",
+      "experiment_id": "1",
+      "run_name": "05_clases_balanceadas",
+      "model_uri": "models:/m-dadf7150a65f4ad19435c02db360d33d",
+      "params": {
+        "C": 1.0,
+        "penalty": "l2",
+        "class_weight": "balanced",
+        "max_iter": 1000,
+        "seed": 42,
+        "validation_seed": 43,
+        "solver": "liblinear",
+        "test_size": 0.2,
+        "validation_size_training": 0.25,
+        "threshold": 0.5,
+        "top_fraction": 0.1,
+        "excluded_columns": "contact,day,month,duration,campaign,poutcome",
+        "dataset_sha256": "d1513ec63b385506f7cfce9f2c5caa9fe99e7ba4e8c3fa264b3aaf0f849ed32d",
+        "train_py_sha256": "4ced3110f9fa74b0d79f326036132225806cb566a74d92d4649ba513bd37fad2",
+        "selection_metric": "validation_AP",
+        "evaluate_test": false
+      },
+      "metrics": {
+        "validation_accuracy": 0.6612475116124751,
+        "validation_precision_yes": 0.200478040035853,
+        "validation_recall_yes": 0.6342155009451795,
+        "validation_f1_yes": 0.30465380249716234,
+        "validation_AP": 0.2564345150499826,
+        "validation_tasa_top10": 0.3274336283185841,
+        "validation_lift_top10": 2.7983505361593926
+      }
+    },
+    {
+      "run_id": "72bc6a6209bf472495938674387dcb52",
+      "experiment_id": "1",
+      "run_name": "06_baseline_repetido",
+      "model_uri": "models:/m-077036936446412b9bf5fe1ba771a5fa",
+      "params": {
+        "C": 1.0,
+        "penalty": "l2",
+        "class_weight": "none",
+        "max_iter": 1000,
+        "seed": 42,
+        "validation_seed": 43,
+        "solver": "liblinear",
+        "test_size": 0.2,
+        "validation_size_training": 0.25,
+        "threshold": 0.5,
+        "top_fraction": 0.1,
+        "excluded_columns": "contact,day,month,duration,campaign,poutcome",
+        "dataset_sha256": "d1513ec63b385506f7cfce9f2c5caa9fe99e7ba4e8c3fa264b3aaf0f849ed32d",
+        "train_py_sha256": "4ced3110f9fa74b0d79f326036132225806cb566a74d92d4649ba513bd37fad2",
+        "selection_metric": "validation_AP",
+        "evaluate_test": false
+      },
+      "metrics": {
+        "validation_accuracy": 0.882879893828799,
+        "validation_precision_yes": 0.47619047619047616,
+        "validation_recall_yes": 0.00945179584120983,
+        "validation_f1_yes": 0.018535681186283594,
+        "validation_AP": 0.26648475591880183,
+        "validation_tasa_top10": 0.3407079646017699,
+        "validation_lift_top10": 2.9117971795172055
+      }
+    }
+  ],
+  "winner": {
+    "run_id": "199023f2ab7d41298d87d60e86b22ee2",
+    "experiment_id": "1",
+    "run_name": "04_regularizacion_l1",
+    "model_uri": "models:/m-2a90defd3d314656b6c31961ec737bf9",
+    "params": {
+      "C": 1.0,
+      "penalty": "l1",
+      "class_weight": "none",
+      "max_iter": 1000,
+      "seed": 42,
+      "validation_seed": 43,
+      "solver": "liblinear",
+      "test_size": 0.2,
+      "validation_size_training": 0.25,
+      "threshold": 0.5,
+      "top_fraction": 0.1,
+      "excluded_columns": "contact,day,month,duration,campaign,poutcome",
+      "dataset_sha256": "d1513ec63b385506f7cfce9f2c5caa9fe99e7ba4e8c3fa264b3aaf0f849ed32d",
+      "train_py_sha256": "4ced3110f9fa74b0d79f326036132225806cb566a74d92d4649ba513bd37fad2",
+      "selection_metric": "validation_AP",
+      "evaluate_test": false
+    },
+    "metrics": {
+      "validation_accuracy": 0.882879893828799,
+      "validation_precision_yes": 0.47619047619047616,
+      "validation_recall_yes": 0.00945179584120983,
+      "validation_f1_yes": 0.018535681186283594,
+      "validation_AP": 0.26654103646194194,
+      "validation_tasa_top10": 0.3418141592920354,
+      "validation_lift_top10": 2.92125106646369
+    }
+  },
+  "final_test": {
+    "run_id": "ef23493e39c048e9a293fca071fbcc3b",
+    "experiment_id": "1",
+    "run_name": "07_ganador_prueba",
+    "model_uri": "models:/m-306e741d7f0342d1a8441a764c6d7522",
+    "params": {
+      "C": 1.0,
+      "penalty": "l1",
+      "class_weight": "none",
+      "max_iter": 1000,
+      "seed": 42,
+      "validation_seed": 43,
+      "solver": "liblinear",
+      "test_size": 0.2,
+      "validation_size_training": 0.25,
+      "threshold": 0.5,
+      "top_fraction": 0.1,
+      "excluded_columns": "contact,day,month,duration,campaign,poutcome",
+      "dataset_sha256": "d1513ec63b385506f7cfce9f2c5caa9fe99e7ba4e8c3fa264b3aaf0f849ed32d",
+      "train_py_sha256": "4ced3110f9fa74b0d79f326036132225806cb566a74d92d4649ba513bd37fad2",
+      "selection_metric": "validation_AP",
+      "evaluate_test": true
+    },
+    "metrics": {
+      "test_accuracy": 0.8820081831250691,
+      "test_precision_yes": 0.30434782608695654,
+      "test_recall_yes": 0.006616257088846881,
+      "test_f1_yes": 0.012950971322849213,
+      "test_AP": 0.2550566033827188,
+      "test_tasa_top10": 0.32964601769911506,
+      "test_lift_top10": 2.817569884738277
+    }
+  }
+}

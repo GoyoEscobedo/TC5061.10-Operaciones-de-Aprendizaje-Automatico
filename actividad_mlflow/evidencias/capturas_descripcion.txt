@@ -1,0 +1,11 @@
+Capturas obtenidas directamente de la interfaz de MLflow.
+Las cinco columnas, de izquierda a derecha, corresponden a:
+05_clases_balanceadas
+03_C_100
+02_C_001
+01_baseline
+04_regularizacion_l1
+
+mlflow_comparacion_parametros.png: nombres y diferencias de configuración.
+mlflow_comparacion_metricas.png: métricas de validación, en el mismo orden.
+La interfaz redondea a tres decimales; comparacion.csv conserva la precisión completa.

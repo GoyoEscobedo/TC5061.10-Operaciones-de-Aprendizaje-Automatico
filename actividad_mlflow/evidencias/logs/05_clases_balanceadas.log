@@ -1,0 +1,37 @@
+{
+  "run_id": "05a793920c954506b90c22756e85d4e9",
+  "experiment_id": "1",
+  "run_name": "05_clases_balanceadas",
+  "model_uri": "models:/m-dadf7150a65f4ad19435c02db360d33d",
+  "params": {
+    "C": 1.0,
+    "penalty": "l2",
+    "class_weight": "balanced",
+    "max_iter": 1000,
+    "seed": 42,
+    "validation_seed": 43,
+    "solver": "liblinear",
+    "test_size": 0.2,
+    "validation_size_training": 0.25,
+    "threshold": 0.5,
+    "top_fraction": 0.1,
+    "excluded_columns": "contact,day,month,duration,campaign,poutcome",
+    "dataset_sha256": "d1513ec63b385506f7cfce9f2c5caa9fe99e7ba4e8c3fa264b3aaf0f849ed32d",
+    "train_py_sha256": "4ced3110f9fa74b0d79f326036132225806cb566a74d92d4649ba513bd37fad2",
+    "selection_metric": "validation_AP",
+    "evaluate_test": false
+  },
+  "metrics": {
+    "validation_accuracy": 0.6612475116124751,
+    "validation_precision_yes": 0.200478040035853,
+    "validation_recall_yes": 0.6342155009451795,
+    "validation_f1_yes": 0.30465380249716234,
+    "validation_AP": 0.2564345150499826,
+    "validation_tasa_top10": 0.3274336283185841,
+    "validation_lift_top10": 2.7983505361593926
+  }
+}
+
+/Users/gescobed_mac/Documents/Operaciones de aprendizaje automático/.venv3.13/lib/python3.13/site-packages/mlflow/types/utils.py:440: UserWarning: Hint: Inferred schema contains integer column(s). Integer columns in Python cannot represent missing values. If your input data contains missing values at inference time, it will be encoded as floats and will cause a schema enforcement error. The best way to avoid this problem is to infer the model schema based on a realistic data sample (training dataset) that includes missing values. Alternatively, you can declare integer columns as doubles (float64) whenever these columns may have missing values. See `Handling Integers With Missing Values <https://www.mlflow.org/docs/latest/models.html#handling-integers-with-missing-values>`_ for more details.
+  warnings.warn(
+2026/10/11 21:51:23 WARNING mlflow.sklearn: Saving scikit-learn models in the pickle or cloudpickle format requires exercising caution because these formats rely on Python's object serialization mechanism, which can execute arbitrary code during deserialization. The recommended safe alternative is the 'skops' format. For more information, see: https://scikit-learn.org/stable/model_persistence.html

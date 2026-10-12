@@ -1,0 +1,49 @@
+{
+  "runs": [
+    {
+      "run_id": "ee8c76c927744857908ef135b6ac933c",
+      "status": "FINISHED",
+      "metrics_count": 7,
+      "evaluation_artifacts_count": 7
+    },
+    {
+      "run_id": "5af49be765bd4f918ac71749a2dfd303",
+      "status": "FINISHED",
+      "metrics_count": 7,
+      "evaluation_artifacts_count": 7
+    },
+    {
+      "run_id": "e751880ee3ef431b99b71fdb48ccc8b3",
+      "status": "FINISHED",
+      "metrics_count": 7,
+      "evaluation_artifacts_count": 7
+    },
+    {
+      "run_id": "199023f2ab7d41298d87d60e86b22ee2",
+      "status": "FINISHED",
+      "metrics_count": 7,
+      "evaluation_artifacts_count": 7
+    },
+    {
+      "run_id": "05a793920c954506b90c22756e85d4e9",
+      "status": "FINISHED",
+      "metrics_count": 7,
+      "evaluation_artifacts_count": 7
+    },
+    {
+      "run_id": "72bc6a6209bf472495938674387dcb52",
+      "status": "FINISHED",
+      "metrics_count": 7,
+      "evaluation_artifacts_count": 7
+    },
+    {
+      "run_id": "ef23493e39c048e9a293fca071fbcc3b",
+      "status": "FINISHED",
+      "metrics_count": 7,
+      "evaluation_artifacts_count": 7
+    }
+  ],
+  "reloaded_model_metrics_identical": true,
+  "dataset_rows": 45211,
+  "predictors": 10
+}

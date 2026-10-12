@@ -1,0 +1,14 @@
+Experimentación reproducible con MLflow — Bank Marketing
+Gregorio Escobedo
+
+Migré la regresión logística del notebook a train.py, conservando las diez variables predictoras disponibles antes de llamar, StandardScaler y OneHotEncoder dentro de un Pipeline. Comparé cinco configuraciones en un mismo experimento de MLflow. Todas compartieron semilla 42, particiones estratificadas y un entorno con versiones fijas: 27,126 registros de ajuste, 9,042 de validación y 9,043 de prueba. Cada variante cambió un solo hiperparámetro respecto al baseline.
+
+Elegí la precisión promedio (AP) de validación como criterio porque el propósito es ordenar clientes para priorizar llamadas y la clase positiva representa alrededor del 11.7 %. La mayor AP fue 0.266541 con C=1, regularización L1, class_weight=None y max_iter=1000. El baseline con L2 obtuvo 0.266485; C=0.01, 0.263594; C=100, 0.266433; y los pesos balanceados, 0.256435. La ventaja de L1 sobre el baseline fue apenas 0.000056: es el ganador observado entre estas configuraciones, pero la diferencia no demuestra una mejora robusta.
+
+class_weight fue el hiperparámetro más influyente entre los evaluados. Con pesos balanceados, el recall de validación pasó de 0.95 % a 63.42 % y F1 de 0.0185 a 0.3047, usando umbral 0.5. A cambio, la precisión bajó de 47.62 % a 20.05 %, la exactitud de 88.29 % a 66.12 % y también disminuyó AP. Si el criterio fuera F1 en vez de AP, habría elegido la configuración balanceada. Esto muestra que la selección depende de la decisión operativa y la métrica definida previamente.
+
+Después de seleccionar L1 con validación, lo reajusté con los 36,168 registros de entrenamiento y lo evalué en prueba: AP=0.255057, recall=0.66 % y F1=0.0130. El 10 % de clientes con mayor puntuación tuvo una tasa observada de contratación de 32.96 % y lift de 2.82. El modelo conserva utilidad para priorizar, pero el umbral 0.5 omite casi todas las contrataciones.
+
+Las limitaciones son la búsqueda pequeña, una sola partición aleatoria y la ausencia de validación temporal. Los datos históricos de clientes contactados no prueban que una llamada cause la contratación ni garantizan desempeño futuro. La sexta corrida reprodujo exactamente las métricas y las predicciones del baseline; el modelo final guardado también reprodujo las métricas al recargarlo.
+
+Evidencia adjunta: evidencias/mlflow_comparacion_parametros.png identifica las cinco columnas y sus configuraciones; evidencias/mlflow_comparacion_metricas.png muestra sus métricas en el mismo orden. Los valores completos, sin redondeo de la interfaz, están en evidencias/comparacion.csv.
