@@ -79,8 +79,10 @@ La entrega contiene:
 - `requirements-lock.txt`: versiones de todas las dependencias del entorno utilizado.
 - `analisis_resultados.txt`: análisis breve de los resultados obtenidos.
 - `evidencias/`: capturas, tabla CSV, comprobación de reproducibilidad y manifiesto de corridas.
-- `mlflow.db` y `mlartifacts/`: registros y artefactos persistentes de MLflow.
-- `outputs/`: copia local de métricas, predicciones, gráficas y configuración por corrida.
+- `mlflow.db` y `mlartifacts/`: registros y artefactos persistentes de MLflow,
+  generados localmente al ejecutar los scripts; no se versionan en Git.
+- `outputs/`: copia local de métricas, predicciones, gráficas y configuración por corrida,
+  generada al ejecutar los scripts; no se versiona en Git.
 
 ## Reproducibilidad y trazabilidad
 
